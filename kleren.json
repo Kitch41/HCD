@@ -1,0 +1,26 @@
+{
+    "Kledingstukken": {
+
+        "Broek met gerafelde pijpen": {
+            "Beschrijving" : "Lange Spijkerbroek met gerafelde pijpen. de pijpen zijn wijd en net te lang.",
+            "Kleur" : "donkerblauw spijkerstof. Net iets donkerder dan normale spijkerstof",
+            "Matches" : [
+                "Broek met fraille", "Broek met ....", "Lichte Schoenen", "...."
+            ]
+        },
+        "Shirt met kenmerk": {
+            "Beschrijving" : "Beschrijving",
+            "Kleur" : "Kleur",
+            "Matches" : [
+                "Broek met fraille", "Broek met ....", "Lichte Schoenen", "...."
+            ]
+        },
+        "Titel": {
+            "Beschrijving" : "Beschrijving",
+            "Kleur" : "Kleur",
+            "Matches" : [
+                "Broek met fraille", "Broek met ....", "Lichte Schoenen", "...."
+            ]
+        }
+    }
+}
