@@ -40,3 +40,17 @@ html {
   .skip-to-content-link:focus {
     transform: translateY(0%);
   }
+
+
+  /* Focus state */
+
+  *:focus {
+    outline: 5px dotted lightgreen;
+  }
+
+  #noitems {
+    display: none;
+
+    color: white;
+    font-size: 2rem;
+  }
