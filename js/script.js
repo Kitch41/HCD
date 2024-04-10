@@ -1,6 +1,9 @@
 console.log("hey")
 
-fetch('/kleren.json')
+const dev = true
+
+
+fetch('./HCD/kleren.json')
   .then(response => response.json())
   .then(data => {
     generateCards(data.Kledingstukken);

@@ -20,6 +20,13 @@
             "Matches" : [
                 "Broek met fraille", "Broek met ....", "Lichte Schoenen", "...."
             ]
+        },
+        "Te grote hoodie": {
+            "Beschrijving" : "Shirt met horizontale strepen die naar zijde voelt",
+            "Kleur" : "oranje",
+            "Matches" : [
+                "Broek met fraille", "Broek met ....", "Lichte Schoenen", "...."
+            ]
         }
     }
 }
