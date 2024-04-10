@@ -3,7 +3,7 @@ console.log("hey")
 const dev = true
 
 
-fetch('./HCD/kleren.json')
+fetch('kleren.json')
   .then(response => response.json())
   .then(data => {
     generateCards(data.Kledingstukken);
