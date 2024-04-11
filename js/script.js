@@ -1,6 +1,7 @@
 console.log("js loaded")
 
-const inputmode = true;
+const inputmode = false;
+
 
 if (inputmode == true) {
   categorylist.style.display = "none"

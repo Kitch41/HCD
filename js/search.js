@@ -1,12 +1,9 @@
 
 const categorylist = document.getElementById("categorylist");
-const categoryitem = document.querySelector("#categorylist li:first-of-type a")
+const categoryitem = document.querySelector("#categorylist li:first-of-type button")
 const cardsContainer = document.querySelector('.cards');
 var noItemsMessage = document.getElementById('noitems');
 const searchInput = document.getElementById("searchInput");
-
-const inputmode = true;
-
 
 function filterCards(e) {
     e.preventDefault();
