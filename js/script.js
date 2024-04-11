@@ -1,6 +1,6 @@
 console.log("js loaded")
 
-const inputmode = false;
+const inputmode = true;
 
 if (inputmode == true) {
   categorylist.style.display = "none"
@@ -22,7 +22,7 @@ function generateCards(kledingstukken) {
     Object.keys(kledingstukken).forEach((kledingstuk) => {
         const item = kledingstukken[kledingstuk];
         const cardLink = document.createElement('a');
-        cardLink.href = '/pages/details.html';
+        cardLink.href = './pages/details.html';
         cardLink.className = 'cardlink';
 
         const card = document.createElement('li');

@@ -28,7 +28,7 @@ main {
 
                     input[type="search"] {
                         width: 100%;
-                        font-size: 2em;
+                        font-size: 1.5em;
                     }
 
                     ul#categorylist {
