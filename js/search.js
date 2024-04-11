@@ -1,144 +1,131 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const searchInput = document.getElementById("searchInput");
+  const cardsContainer = document.querySelector('.cards');
+  const noItemsMessage = document.getElementById('noitems');
+  const categoryRadios = document.querySelectorAll('input[name="category"]');
+  const startButton = document.getElementById('start');
+  let resetButton;
+  let cardsDisplayed = false;
 
-const categorylist = document.getElementById("categorylist");
-const categoryitem = document.querySelector("#categorylist li:first-of-type button")
-const cardsContainer = document.querySelector('.cards');
-var noItemsMessage = document.getElementById('noitems');
-const searchInput = document.getElementById("searchInput");
+  function filterCards() {
+      const searchText = searchInput.value.trim().toLowerCase();
+      const selectedCategory = getSelectedCategory();
 
-function filterCards(e) {
-    e.preventDefault();
+      const cards = document.querySelectorAll('.cards .cardlink');
+      let visibleCardsCount = 0;
 
-    var searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
-    var cards = document.querySelectorAll('.cards .cardlink');
-    var visibleCardsCount = 0; // Initialize visible cards count
+      cards.forEach(function(card) {
+          const title = card.querySelector('.titel').innerText.toLowerCase();
+          const description = card.querySelector('.description').innerText.toLowerCase();
+          const color = card.querySelector('.color').innerText.toLowerCase();
+          const cardCategory = card.querySelector('.soort').textContent.toLowerCase();
 
-    cards.forEach(function(card) {
-        var title = card.querySelector('.titel').innerText.toLowerCase();
-        var description = card.querySelector('.description').innerText.toLowerCase();
-        var color = card.querySelector('.color').innerText.toLowerCase();
-        
-        var titleMatches = title.split(' ').some(word => word.startsWith(searchInput));
-        var descriptionMatches = description.split(' ').some(word => word.startsWith(searchInput));
-        var colorMatches = color.split(' ').some(word => word.startsWith(searchInput));
-        
-        if (titleMatches || descriptionMatches || colorMatches) {
-            card.style.display = 'block'; // Show the card
-            visibleCardsCount++; // Increment visible cards count
-        } else {
-            card.style.display = 'none'; // Hide the card
-        }
-    });
+          const titleMatches = title.includes(searchText);
+          const descriptionMatches = description.includes(searchText);
+          const colorMatches = color.includes(searchText);
+          const categoryMatches = (selectedCategory === 'all' || cardCategory === selectedCategory);
 
-    // Get the element you want to show/hide (noitems message)
+          if (categoryMatches && (titleMatches || descriptionMatches || colorMatches)) {
+              card.style.display = 'flex'; // Show the card
+              visibleCardsCount++; // Increment visible cards count
+          } else {
+              card.style.display = 'none'; // Hide the card
+          }
+      });
 
-
-    noItemsMessage.addEventListener("click", clearSearch)
-
-    // Check if there are no visible cards
-    if (visibleCardsCount === 0) {
-        // Display the 'noitems' message
-        noItemsMessage.style.display = 'block';
-    } else {
-        // Hide the 'noitems' message
-        noItemsMessage.style.display = 'none';
-    }
-}
-
-
-
-if (searchInput) {
-    searchInput.addEventListener("input", filterCards);
-} else {
-    console.log("No search bar present");
-}
-
-function clearSearch(e) {
-    e.preventDefault();
-
-    var searchInput = document.getElementById('searchInput');
-    var cards = document.querySelectorAll('.cards .cardlink');
-    var noItemsMessage = document.getElementById('noitems');
-
-    searchInput.value = null;
-
-    cards.forEach(function(card) {
-        card.style.display = "flex";
-    })
-    
-    noItemsMessage.style.display = "none";
-
-    if (inputmode == true) {
-        searchInput.focus();
-    } else {
-        categoryitem.focus();
-    }
-
-    filterCards(e)
-}
-
-
-const shirtscategorybtn = document.getElementById("shirtscategory");
-const pantscategorybtn = document.getElementById("pantscategory");
-const jacketcategorybtn = document.getElementById("jacketcategory");
-const vestcategorybtn = document.getElementById("vestcategory");
-
-
-
-function showclothes(item) {
-    const cards = document.querySelectorAll('.cards .cardlink');
-
-  var visibleCardsCount = 0; // Initialize visible cards count
-
-    cards.forEach(function(card) {
-    const cardCategoryElement = card.querySelector('.soort');
-    if (!cardCategoryElement) {
-      console.error('Category element not found in card:', card);
-      return;
-    }
-    
-    const cardCategory = cardCategoryElement.textContent.toLowerCase();
-    console.log('Card category:', cardCategory);
-
-    // Check if the card's category matches the specified item
-    if (cardCategory === item.toLowerCase()) {
-      console.log('Match found for', item, ':', cardCategory);
-      card.style.display = 'block'; // Show the card
-      visibleCardsCount++;
-    } else {
-      console.log('No match for', item, ':', cardCategory);
-      card.style.display = 'none'; // Hide the card
-    }
-  });
-
-      // Get the element you want to show/hide (noitems message)
-      var noItemsMessage = document.getElementById('noitems');
-
-      noItemsMessage.addEventListener("click", clearSearch)
-  
-      // Check if there are no visible cards
       if (visibleCardsCount === 0) {
-          // Display the 'noitems' message
-          noItemsMessage.style.display = 'block';
+          const searchValue = searchInput.value.trim();
+          const categoryLabel = getSelectedCategoryLabel(selectedCategory);
+          const message = `Geen items gevonden met "${searchValue}" en Categorie ${categoryLabel}. Klik hier om terug te gaan.`;
+          noItemsMessage.querySelector('h2').innerHTML = message;
+          toggleNoItemsMessage(true); // Show 'no items found' message
       } else {
-          // Hide the 'noitems' message
-          noItemsMessage.style.display = 'none';
+          toggleNoItemsMessage(false); // Hide 'no items found' message
       }
 
-    }
+      updateResetButtonVisibility(visibleCardsCount > 0);
+      cardsDisplayed = true;
+  }
 
-// Add event listeners to category buttons
-shirtscategorybtn.addEventListener("click", function() {
-  showclothes('shirt');
-});
+  function getSelectedCategory() {
+      let selectedCategory = 'all';
+      categoryRadios.forEach(function(radio) {
+          if (radio.checked) {
+              selectedCategory = radio.value;
+          }
+      });
+      return selectedCategory;
+  }
 
-pantscategorybtn.addEventListener("click", function() {
-  showclothes('broek');
-});
+  function getSelectedCategoryLabel(category) {
+      switch (category) {
+          case 'shirt':
+              return 'Shirt';
+          case 'broek':
+              return 'Broek';
+          case 'jacket':
+              return 'Jacket';
+          case 'vest':
+              return 'Vest';
+          default:
+              return 'Alle';
+      }
+  }
 
-jacketcategorybtn.addEventListener("click", function() {
-  showclothes('jacket');
-});
+  function toggleNoItemsMessage(show) {
+      noItemsMessage.style.display = show ? 'block' : 'none';
+  }
 
-vestcategorybtn.addEventListener("click", function() {
-  showclothes('vest');
+  function updateResetButtonVisibility(show) {
+      if (!resetButton) {
+          resetButton = document.createElement('button');
+          resetButton.textContent = 'Dit was het laatste kleding item, Klik hier om een andere zoekopdracht te maken';
+          resetButton.classList.add('reset-button');
+          resetButton.addEventListener('click', clearSearch);
+          cardsContainer.parentElement.appendChild(resetButton);
+      }
+      resetButton.style.display = show ? 'block' : 'none';
+  }
+
+  function clearSearch() {
+      searchInput.value = '';
+      categoryRadios.forEach(radio => radio.checked = false);
+
+      cardsContainer.style.display = 'none';
+      cardsContainer.querySelectorAll('.cardlink').forEach(card => {
+          card.style.display = 'none';
+      });
+
+      toggleNoItemsMessage(false);
+      resetButton.style.display = 'none';
+      cardsDisplayed = false;
+
+      searchInput.focus();
+  }
+
+  startButton.addEventListener('click', function() {
+      cardsContainer.style.display = 'flex';
+      filterCards();
+  });
+
+  searchInput.addEventListener('input', function() {
+      if (cardsDisplayed) {
+          filterCards();
+      }
+  });
+
+  categoryRadios.forEach(radio => {
+      radio.addEventListener('change', function() {
+          if (cardsDisplayed) {
+              clearSearch();
+          }
+      });
+  });
+
+  noItemsMessage.addEventListener('click', function() {
+      clearSearch();
+  });
+
+  cardsContainer.style.display = 'none';
+  noItemsMessage.style.display = 'none';
 });

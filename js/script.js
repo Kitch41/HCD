@@ -1,14 +1,6 @@
 console.log("js loaded")
 
-const inputmode = false;
-
-
-if (inputmode == true) {
-  categorylist.style.display = "none"
-} else {
-  searchInput.style.display = "none"
-}
-
+const cardsContainer = document.querySelector('.cards');
 
 fetch('kleren.json')
   .then(response => response.json())

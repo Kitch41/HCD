@@ -7,6 +7,22 @@ main {
         flex-direction: column;
         gap: 2em;
         padding-top: 2em;
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            h1 {
+                font-size: 3em;
+                color: white;
+            }
+
+            p {
+                color: white;
+            }
+        }
+
         .search {
             width: 100%;
             display: flex;
@@ -16,33 +32,44 @@ main {
             .search-bar-container {
                 display: flex;
                 flex-direction: row;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
 
                 label {
 
                     width: 100%;
                     font-size: 1.5rem;
                     color: white;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 1em;
+
 
                     input[type="search"] {
                         width: 100%;
                         font-size: 1.5em;
                     }
 
-                    ul#categorylist {
-                        display: flex;
-                        justify-content: space-evenly;
 
-                        li {
-                            button {
-                                color: white;
-                                padding: 1em;
-                                background-color: transparent;
-                            }
-                        }
+                }
+                #categorylist {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    gap: 2em;
+
+                    label {
+                        width: fit-content;
                     }
+
+                    button {
+                        color: white;
+                        padding: 1em;
+                        background-color: transparent;
+                    }
+                    
+                }
+                #start {
+                    padding: 1em 0;
+                    width: 20em;
                 }
             }
 
@@ -53,7 +80,7 @@ main {
             .cards {
                 width: 100%;
 
-                display: flex;
+                display: none;
                 flex-direction: row;
                 margin: 0 auto;
                 gap: 1em;
@@ -98,6 +125,12 @@ main {
                     }
                     &:hover {
                         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                    }
+                }
+
+                #noitems {
+                    h2 {
+                        font-size: 0.7em;
                     }
                 }
 

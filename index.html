@@ -11,7 +11,7 @@
         Sla Navigatie over
     </a>
     <header>  
-        <h1 href="#default" class="logo">Match het</h1>
+        <p class="logo">Match het</p>
         <ul class="header-right">
             <li><a href="./pages/voeg-kleding-toe.html">Voeg Kleding toe</a></li>
         </ul>
@@ -19,20 +19,27 @@
 
     <main id="main">
         <section class="wrapper">
+            <section class="intro">
+                <h1>Welkom bij Match Het</h1>
+                <p>Hieronder staat een zoekbalk en een aantal knoppen met categorieen erop. Je kunt hier de naam, beschrijving en/of de kleur typen van een kledingstuk. Dan krijg je de keuze om een categorie te kiezen waar dit onder valt. beide opties zijn optioneel. Klik als je alles hebt ingevuld wat je wilt op de Zoek nu knop </p>
+            </section>
             <section class="search">
-                <section class="search-bar-container">
+                <form class="search-bar-container">
                     <label>
                         Zoek een kledingstuk om te beginnen met matchen
                         <input type="search" id="searchInput" placeholder="Zoek naar kleding, beschrijving of kleur">
-                        <ul id="categorylist">
-                            <li><button type="button" href="#" id="shirtscategory">Shirts</button></li>
-                            <li><button type="button" href="#" id="pantscategory">Broeken</button></li>
-                            <li><button type="button" href="#" id="jacketcategory">Jassen</button></li>
-                            <li><button type="button" href="#" id="vestcategory">Vest</button></li>
-                        </ul>
-                    </label>
+                        </label>
+
+                        <fieldset id="categorylist">
+                            <label>Shirts<input type="radio" name="category" href="#" id="shirtscategory" value="shirt"></input></label>
+                            <label>Broeken<input type="radio" name="category" href="#" id="pantscategory" value="broek"></input></label>
+                            <label>Jassen<input type="radio" name="category" href="#" id="jacketcategory" value="jas"></input></label>
+                            <label>Vesten<input type="radio" name="category" href="#" id="vestcategory" value="vest"></input></label>
+                        </fieldset>
+
+                        <button type="button" id="start">Zoek Nu</button>
                 
-                </section>
+                </form>
             </section>
 
             <section class="items">
