@@ -1,6 +1,12 @@
-console.log("hey")
+console.log("js loaded")
 
-const dev = true
+const inputmode = false;
+
+if (inputmode == true) {
+  categorylist.style.display = "none"
+} else {
+  searchInput.style.display = "none"
+}
 
 
 fetch('kleren.json')
@@ -11,12 +17,12 @@ fetch('kleren.json')
   .catch(error => console.error('Error fetching data:', error));
 
 function generateCards(kledingstukken) {
-    const cardsContainer = document.querySelector('.cards');
+    
 
     Object.keys(kledingstukken).forEach((kledingstuk) => {
         const item = kledingstukken[kledingstuk];
         const cardLink = document.createElement('a');
-        cardLink.href = '#';
+        cardLink.href = '/pages/details.html';
         cardLink.className = 'cardlink';
 
         const card = document.createElement('li');
@@ -34,6 +40,10 @@ function generateCards(kledingstukken) {
         title.className = 'titel';
         title.innerHTML = `<b>${kledingstuk}</b>`;
 
+        const soort = document.createElement('p');
+        soort.className = 'soort';
+        soort.innerHTML = `${item.Soort}`;
+
         const description = document.createElement('p');
         description.className = 'description';
         description.textContent = truncateText(item.Beschrijving, 10);
@@ -43,6 +53,7 @@ function generateCards(kledingstukken) {
         color.textContent = item.Kleur;
 
         container.appendChild(title);
+        container.appendChild(soort);
         container.appendChild(description);
         container.appendChild(color);
 

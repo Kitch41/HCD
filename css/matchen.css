@@ -32,6 +32,18 @@ main {
                         width: 100%;
                         font-size: 2em;
                     }
+
+                    ul#categorylist {
+                        display: flex;
+                        justify-content: space-evenly;
+
+                        li {
+                            a {
+                                color: white;
+                                padding: 1em;
+                            }
+                        }
+                    }
                 }
             }
 

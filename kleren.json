@@ -3,6 +3,7 @@
         "Broek met gerafelde pijpen": {
             "Beschrijving" : "Lange Spijkerbroek met gerafelde pijpen. de pijpen zijn wijd en net te lang.",
             "Kleur" : "Donkerblauw spijkerstof. Net iets donkerder dan normale spijkerstof",
+            "Soort" : "Broek",
             "Matches" : [
                 "Broek met fraille", "Broek met ....", "Lichte Schoenen", "...."
             ]
@@ -10,6 +11,7 @@
         "Groot shirt met zonnebloem": {
             "Beschrijving" : "Iets te groot shirt met zonnebloemen op de voorkant.",
             "Kleur" : "Bladergroen",
+            "Soort" : "Shirt",
             "Matches" : [
                 "Broek met fraille", "Broek met ....", "Lichte Schoenen", "...."
             ]
@@ -17,6 +19,7 @@
         "Zijde shirt met strepen": {
             "Beschrijving" : "Shirt met horizontale strepen die naar zijde voelt",
             "Kleur" : "oranje",
+            "Soort" : "Shirt",
             "Matches" : [
                 "Broek met fraille", "Broek met ....", "Lichte Schoenen", "...."
             ]
@@ -24,6 +27,7 @@
         "Te grote hoodie": {
             "Beschrijving" : "Shirt met horizontale strepen die naar zijde voelt",
             "Kleur" : "oranje",
+            "Soort" : "Shirt",
             "Matches" : [
                 "Broek met fraille", "Broek met ....", "Lichte Schoenen", "...."
             ]
