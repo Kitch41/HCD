@@ -5,6 +5,7 @@ const cardsContainer = document.querySelector('.cards');
 var noItemsMessage = document.getElementById('noitems');
 const searchInput = document.getElementById("searchInput");
 
+const inputmode = true;
 
 
 function filterCards(e) {
@@ -69,15 +70,11 @@ function clearSearch(e) {
     
     noItemsMessage.style.display = "none";
 
-
     if (inputmode == true) {
         searchInput.focus();
     } else {
         categoryitem.focus();
     }
-
-   
-    
 
     filterCards(e)
 }
