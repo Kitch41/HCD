@@ -28,10 +28,10 @@ function generateCards(kledingstukken) {
         const card = document.createElement('li');
         card.className = 'card';
 
-        const image = document.createElement('img');
-        image.src = './images/placeholder.png';
-        image.alt = 'Avatar';
-        image.style.width = '100%';
+        // const image = document.createElement('img');
+        // image.src = './images/placeholder.png';
+        // image.alt = 'Avatar';
+        // image.style.width = '100%';
 
         const container = document.createElement('div');
         container.className = 'container';
@@ -57,7 +57,7 @@ function generateCards(kledingstukken) {
         container.appendChild(description);
         container.appendChild(color);
 
-        card.appendChild(image);
+        // card.appendChild(image);
         card.appendChild(container);
 
         cardLink.appendChild(card);

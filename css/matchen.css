@@ -12,10 +12,7 @@ main {
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
-            h2 {
-                font-size: 1.5rem;
-                color: white;
-            }
+
             .search-bar-container {
                 display: flex;
                 flex-direction: row;
@@ -23,7 +20,8 @@ main {
                 label {
 
                     width: 100%;
-
+                    font-size: 1.5rem;
+                    color: white;
                     display: flex;
                     flex-direction: column;
                     gap: 1em;
@@ -38,9 +36,10 @@ main {
                         justify-content: space-evenly;
 
                         li {
-                            a {
+                            button {
                                 color: white;
                                 padding: 1em;
+                                background-color: transparent;
                             }
                         }
                     }
