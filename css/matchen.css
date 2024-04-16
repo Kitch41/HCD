@@ -55,6 +55,7 @@ main {
                     flex-direction: row;
                     justify-content: flex-start;
                     gap: 2em;
+                    flex-wrap: wrap ;
 
                     label {
                         width: fit-content;
