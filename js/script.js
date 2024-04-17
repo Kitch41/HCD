@@ -14,7 +14,7 @@ fetch('kleren.json')
         const item = kledingstukken[kledingstuk];
 
         const cardLink = document.createElement('a');
-        cardLink.href = `./pages/details.html#${item.id}`;
+        cardLink.href = `./pages/details.html?id=${item.id}`;
         cardLink.className = 'cardlink';
 
         const card = document.createElement('li');
@@ -57,7 +57,7 @@ fetch('kleren.json')
         cardLink.addEventListener('click', (event) => {
           event.preventDefault(); // Prevent default link behavior
           const itemId = item.id;
-          window.location.href = `./pages/details.html#${itemId}`;
+          window.location.href = `./pages/details.html?id=${itemId}`;
       });
 
       cardsContainer.appendChild(cardLink);

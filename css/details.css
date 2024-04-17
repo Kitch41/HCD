@@ -20,6 +20,16 @@
         h2 {
             font-size: 2rem;
         }
+
+        ul {
+            display: flex;
+            gap: 1em;
+
+            li {
+                background-color: grey;
+                padding: 1em;
+            }
+        }
     }
 }
 
