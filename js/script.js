@@ -9,13 +9,12 @@ fetch('kleren.json')
   })
   .catch(error => console.error('Error fetching data:', error));
 
-function generateCards(kledingstukken) {
-    
-
+  function generateCards(kledingstukken) {
     Object.keys(kledingstukken).forEach((kledingstuk) => {
         const item = kledingstukken[kledingstuk];
+
         const cardLink = document.createElement('a');
-        cardLink.href = './pages/details.html';
+        cardLink.href = `./pages/details.html#${item.id}`;
         cardLink.className = 'cardlink';
 
         const card = document.createElement('li');
@@ -55,7 +54,13 @@ function generateCards(kledingstukken) {
 
         cardLink.appendChild(card);
 
-        cardsContainer.appendChild(cardLink);
+        cardLink.addEventListener('click', (event) => {
+          event.preventDefault(); // Prevent default link behavior
+          const itemId = item.id;
+          window.location.href = `./pages/details.html#${itemId}`;
+      });
+
+      cardsContainer.appendChild(cardLink);
     });
 }
 

@@ -96,12 +96,12 @@ document.addEventListener("DOMContentLoaded", function() {
           card.style.display = 'none';
       });
 
-      toggleNoItemsMessage(false);
-      resetButton.style.display = 'none';
-      cardsDisplayed = false;
+toggleNoItemsMessage(false);
+    resetButton.style.display = 'none';
+    cardsDisplayed = false;
 
-      searchInput.focus();
-  }
+    searchInput.focus(); 
+}
 
   startButton.addEventListener('click', function() {
       cardsContainer.style.display = 'flex';

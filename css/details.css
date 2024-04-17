@@ -1,0 +1,25 @@
+#details {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    
+    #main {
+        margin-inline: max(1.5rem, ((100% - 75rem) / 2));
+
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    
+    #matches {
+        margin-inline: max(1.5rem, ((100% - 75rem) / 2));
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
