@@ -28,6 +28,8 @@ Om deze reden heb ik besloten een webapp te bouwen waarmee petra zelf met iemand
 De webapp gaat doormiddel van een zoekfunctie kledingstukken matchen die je eerder hebt ingevoerd. Dit is zelfstandig en goed te gebruiken door Petra.
 
 
+<!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
+
 ### Week 1
 
 Week 1 begon met veel Vragen stellen aan Petra, Hierdoor kwamen we een aantal dingen te weten. Deze zal ik hieronder zetten:
@@ -43,7 +45,7 @@ De app zal een kledingstuk dat je kiest matchen met andere kledingstukken die je
 
 #### Exclusive Design Principles
 
-In week 1 heb ik me vooral bezig gehouden met de principes <b>Study situation</b>, <b>Ignore conventions</b> en <b>Prioritise identity</b>
+In week 1 heb ik me vooral bezig gehouden met de principes <b>Study situation</b>, <b>Ignore conventions</b> en <b>Prioritise identity</b>. En wat minder met Add nonsense aangezien het het begin van de week was en er nog geen concreet plan was.
 
 ##### Study Situation
 Voor Study Situations heb ik vragen gesteld over hoe ze nou het meeste op het web surft en wat ze zou gebruiken in het geval van mijn app. Hieruit kwam dat Petra graag haar telefoon gebruikt als ze kleren zou uitzoeken.
@@ -54,13 +56,15 @@ Ook heb ik me bezig gehouden met Ignore Conventions, Zo heb ik goed nagedacht ov
 Hieruit kwam vooral dat ik me goed moet focussen op de usability en responsiveness van de hele app.
 
 ##### Prioritise Identity
-
 In week 1 lag de prioriteit wel heel erg bij Prioritise Identity, Zo heb ik aan het begin een goed gesprek gehad met Petra over de dingen die ze echt wil zien in een app. Hieruit kwam vooral dat ze zelfstandig heel veel wilt kunnen doen. Ook heb ik over een aantal extra dingen nagedacht zoals het feit dat er weinig tot geen styling nodig is.
 
 ##### Add Nonsense
 
 Ik heb weinig gedaan aan add nonsense. Dit komt vooral omdat het nog vroeg in het project is en ik nog in de fase zit waar ik over het kernidee nadenk. Later als ik wat verder ben en daadwerkelijk dingen ga bouwen kan ik daar over gaan nadenken.
 
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------->
 
 
 ### Week 2
@@ -91,7 +95,6 @@ In week 2 begon het bouwen van de app. Hier heb ik echt een boel dingen gedaan m
 ##### Study Situation
 Study situation was in week 2 even belangrijk als in week 1. Zo heb ik in het gesprek meegekregen dat ze in het design geen resultaten wilde zien totdat ze alles had ingevoerd. Dit vond ze zelf veel handiger als ze bezig is zodat ze niet perongeluk doorgaat zonder alles in te voeren.
 
-
 ##### Ignore Conventions
 Tijdens het bouwen heb ik een aantal dingen gedaan die ik normaal heel anders zou hebben gedaan zoals het weglaten van foto's. Dit kwam eruit tijdens het gesprek. De screenreader leest anders ook de alt tag op en die is helemaal niet nodig.
 
@@ -101,13 +104,16 @@ In week 2 heb ik niet heel veel nieuws gedaan met Prioritise identity. Ik heb vo
 Ook heb ik het idee verbreedt zodat ze zoveel mogenlijk zelf kon doen.
 
 ##### Add Nonsense
-
 Voor add nonsense heb ik het begin van een zoekbalk geimplementeerd en gevraagd aan Petra of dit handig was. Er kwam uit dat ze dit niet zovaak ziet en wel graag zou willen zien.
 
 #### Verder werken
-
 Na het feedbackgesprek heb ik een paar doelen
 Ik ga de zoekfunctie en de buttons samen proberen te implementeren.
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+
+
 
 ### Week 3
 
@@ -123,6 +129,7 @@ Bij de test van week 3 kwam eruit dat de zoekfunctie nu wel goed werkt en handig
 <b>Te Verbeteren</b>
 
 * Duidelijker maken wat er aan de hand is doormiddel van tekst
+* Zoekbalk iets vriendelijker maken
 
 #### Exclusive Design Principles
 
@@ -133,12 +140,22 @@ De zoekfunctie bevat een aantal design principes. Vooral:
 ##### Add nonsense
 Het toevoegen en toegankelijk maken van een zoekbalk is niet iets wat ik normaal zou doen, en ook niet iets wat petra vaak ziet. Hierom heb ik geprobeerd het zo goed mogenlijk te bouwen.
 
+##### Ignore Conventions
+Voor Ignore Conventions heb ik weinig nieuwe details gevonden in week 3 aangezien ik vooral bezig was met de zoekfunctie. Binnen de zoekfunctie heb ik wel nog iets aangepast, namelijk de zoekknop. Als ik het zelf zou hebben gebouwd zou ik de zoekknop of weg hebben gelaten of naast de zoekbalk gezet. Maar voor Petra is het beter als hij eronder staat zodat ze weet wanneer het formulier klaar is.
+
+##### Prioritise Identity
+Voor Prioritise Identity heb ik in week 3 niet veel extra kunnen toevoegen. Het enige wat ik nog heb aangepast is de kopjestekst bij de detailpagina. Dit was van belang zodat petra weet waar ze zit en wat ze daar moet doen.
+
 ##### Study Situation
 Het bekijken wat Petra wel en niet kan en het zelf testen met een screenreader heeft me wel wat informatie opgeleverd. Zo is het lastig om te weten of je het toetsenbord open hebt, en dat hij dicht gaat als je op zoeken klikt.
 
 #### Samenvatting week 3
 
 Uiteindelijk heb ik week 3 gebruikt om de zoekfunctie nog een klein beetje te fixen en af te ronden en daarnaast heb ik de detailpagina gebouwd en de pagina waar je de kleren kunt toevoegen gemaakt.
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 ### Week 4
 
@@ -166,6 +183,8 @@ In week 4 ga ik aangeven wat ik nog zou kunnen verbeteren als het aankomt op de 
 ##### Study Situation
 Bij Study Situation heb ik goed gekeken naar hoe ze de app gebruikt. Dus op haar mobiel met een screenreader. Hier heb ik op gelet tijdens het scrijven van mijn html. zo staat alles goed gegroepeerd en netjes onder een header tag. 
 
+Ook heb ik gekeken naar hoe Petra haar telefoon nu gebruikt. Zo merkte ik dat Petra een Iphone gebruikt.
+
 Als ik nog meer tijd had had ik nog dieper willen ingaan op welke plek ze dit doet en of er nog andere factoren meespelen in het gebruik van de app
 
 ##### Ignore Conventions
@@ -184,16 +203,22 @@ Voor add nonsense heb ik een zoekbalk toegevoegd, deze zou ik nog iets verder ui
 Ook had ik nog wat extra na gaan denken om andere dingen toe te voegen die eventueel goed zijn voor Petra.
 
 
-### Extra tijd
-Wat ik gedaan zou hebben als ik extra tijd had om dit project verder uit te werken is:
+<!------------------------------------------------------------------------------------------------------------------------------------------->
 
-* Een server opzetten om de data op te slaan. En vervolgens de app bouwen dat hij voor meerdere mensen werkt.
+
+### Extra tijd
+Wat ik gedaan zou hebben na het laatste testgesprek als ik extra tijd had om dit project verder uit te werken is:
+
+* Een server opzetten om de data op te slaan. En vervolgens de app bouwen dat hij voor meerdere mensen werkt. (Als dit teveel was het schrijven van een json file.)
 * Dit vervolgens testen en dan nog extra accesibility features toevoegen die kleine verschillen maken, zoals geluid en eventueel trillingen.
 * Extra nadenken over nog meer Exclusive Design Principles toevoegen.
+* Zoekbalk verder optimaliseren na feedback. (resetten).
+* Footer weghalen
+* Vragen of het matchmenu goed werkt en of ze liever nog een zoekfunctie daar zou willen hebben.
 
 
 ### Conclusie
 In conclusie is de app nu afgerond op het servergedeelte na aangezien dit geen vereiste is. De pagina is goed te navigeren d.m.v. een screenreader zowel op telefoon als op desktop.
 
-Ik ben blij met de uitkomst van dit project aangezien het een stuk lastiger was dan dat het leek aan het begin. Vooral het nadenken was best wel een knelpunt.
+Ik ben blij met de uitkomst van dit project aangezien het een stuk lastiger was dan dat het leek aan het begin. Vooral het nadenken was best wel een knelpunt. Dit kwam omdat het behoorlijk lastig is om mee te denken met iemand die blind is. Het is niet te bedenken hoe dat zou zijn. Dus alles wat je moet doen moet je testen en vragen.
 
