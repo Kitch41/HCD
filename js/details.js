@@ -34,13 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
 function populateItemDetails(item, data) {
     const mainSection = document.getElementById('main');
 
     // Set the title of the item (key) in the <h1> element
     const title = getKeyByValue(data.Kledingstukken, item);
-    mainSection.querySelector('h1').textContent = title;
+    mainSection.querySelector('h2').textContent = title;
 
     // Set other details (Soort, Kleur, Beschrijving) in corresponding <p> elements
     mainSection.querySelector('p.soort').textContent = `Soort: ${item.Soort}`;
@@ -76,6 +75,9 @@ function populateItemDetails(item, data) {
                 li.appendChild(cardSoort);
                 li.appendChild(cardKleur);
                 li.appendChild(cardBeschrijving);
+
+                // Add tabindex attribute to make the <li> element focusable by tabbing
+                li.tabIndex = 0;
                 
                 // Append the card <li> to the <ul> element
                 ul.appendChild(li);
@@ -85,7 +87,6 @@ function populateItemDetails(item, data) {
         console.error('Matches data is not an array or is null.');
     }
 }
-
 
 // Function to get key (title) by value (item) in an object
 function getKeyByValue(object, value) {

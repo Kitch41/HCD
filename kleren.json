@@ -24,7 +24,7 @@
             "id" : "3",
             "Soort" : "Shirt",
             "Matches" : [
-                "Broek met fraille", "Broek met ....", "Lichte Schoenen", "...."
+                "2", "5", "1"
             ]
         },
         "Te grote hoodie": {
@@ -43,6 +43,51 @@
             "Soort" : "Jas",
             "Matches" : [
                 "1", "4"
+            ]
+        },
+        "Trui van wol": {
+            "Beschrijving" : "Wollen trui voor in de winter",
+            "Kleur" : "wit",
+            "id" : "6",
+            "Soort" : "shirt",
+            "Matches" : [
+                "1", "4"
+            ]
+        },
+        "Korte legerbroek": {
+            "Beschrijving" : "Korte broek met legerprint",
+            "Kleur" : "legergroene camouflage",
+            "id" : "7",
+            "Soort" : "broek",
+            "Matches" : [
+                "4", "5"
+            ]
+        },
+        "Spijkerbroek licht": {
+            "Beschrijving" : "Lichte lange spijkerbroek met ....",
+            "Kleur" : "lichte Spijkerstofkleur",
+            "id" : "8",
+            "Soort" : "broek",
+            "Matches" : [
+                "4", "5"
+            ]
+        },
+        "Spijkerbroek grijs": {
+            "Beschrijving" : "Grijze lange spijkerbroek",
+            "Kleur" : "lichtgrijs",
+            "id" : "9",
+            "Soort" : "broek",
+            "Matches" : [
+                "4", "5"
+            ]
+        },
+        "Lange winterjas met flappen": {
+            "Beschrijving" : "Lange winterjas met flappen aan de muts",
+            "Kleur" : "oranje",
+            "id" : "10",
+            "Soort" : "jas",
+            "Matches" : [
+                "1", "3", "4", "6", "7"
             ]
         }
     }

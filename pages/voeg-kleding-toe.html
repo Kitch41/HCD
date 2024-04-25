@@ -17,7 +17,60 @@
         </ul>
     </header>
 
-    <main></main>
+    <main id="add">
+        <form action="GET" id="addform">
+
+            <label>Titel
+                <input type="text">
+            </label>
+
+            <label>
+                Categorie
+                <select name="category" id="category-select">
+                    <option value="shirt">Shirt</option>
+                    <option value="pants">Pants</option>
+                    <option value="jacket">Jacket</option>
+                    <option value="vest">Vest</option>
+                  </select>
+
+            </label>
+
+
+              <label>Kleur
+                <input type="text">
+            </label>
+
+            <label>Beschrijving
+                <textarea></textarea>
+            </label>
+
+            <fieldset>
+                Matched Met:
+                <label>
+                    Shirt met zonnebloemen
+                    <input type="checkbox">
+                </label>
+                <label>
+                    Gerafelde broek
+                    <input type="checkbox">
+                </label>
+                <label>
+                    Te lange Broek
+                    <input type="checkbox">
+                </label>
+                <label>
+                    Flanele jas
+                    <input type="checkbox">
+                </label>
+            </fieldset>
+
+            <button type="submit">Voeg kledingstuk toe</button>
+
+
+        </form>
+
+
+    </main>
     <footer></footer>
 </body>
 <script src="./js/script.js"></script>

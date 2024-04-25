@@ -1,12 +1,15 @@
 # HCD
 
-Dit is de readme voor het project voor HCD, Hierin zal ik 
+Dit is de readme voor het project voor HCD, Hierin zal ik beschrijven hoe mijn app werkt en wat het is.
 
 ## Installation
 
-No installation needed, The website can run as it is.
+Geen installatie nodig. De pagina kan gebruikt worden na het openen.
 
 ## Usage
+
+De app werkt in meerdere stappen. Eerst moet je kleren toevoegen doormiddel van een titel, categorie, beschrijving, kleur en waar het mee matcht
+Dan kun je een kledingstuk kiezen wat je aan wilt hebben en dan geeft de app je de opties die je eerder hebt ingevult. Het funtioneerd dus een beetje als een geheugensteuntje.
 
 ## Opdracht
 
@@ -56,7 +59,31 @@ Ik ga de zoekfunctie en de buttons samen proberen te implementeren.
 
 ### Week 3
 
+#### Feedback Gesprek
 
-## License
+Bij de test van week 3 kwam eruit dat de zoekfunctie nu wel goed werkt en handig te gebruiken is door petra.
 
-[MIT](https://choosealicense.com/licenses/mit/)
+<b>Positief</b>
+
+* Goed te navigeren
+* Handig idee
+
+<b>Te Verbeteren</b>
+
+* Duidelijker maken wat er aan de hand is doormiddel van tekst
+
+#### Samenvatting week 3
+
+Uiteindelijk heb ik week 3 gebruikt om de zoekfunctie nog een klein beetje te fixen en af te ronden en daarnaast heb ik de detailpagina gebouwd en de pagina waar je de kleren kunt toevoegen gemaakt.
+
+### Week 4
+
+Week 4 is de laatste week. Hierin heb ik een aantal dingen afgerond en vooral thuis gewerkt.
+Ik kon helaas niet aanwezig zijn bij het laatste feedbackmoment. Dus heb ik alle informatie die ik eerder heb ontvangen nog even goed doorgekeken en afgerond.
+
+
+### Conclusie
+
+In conclusie is de app nu afgerond op het servergedeelte na aangezien dit geen vereiste is. De pagina is goed te navigeren d.m.v. een screenreader zowel op telefoon als op desktop.
+
+Ik ben blij met de uitkomst van dit project aangezien het een stuk lastiger was dan dat het leek aan het begin. Vooral het nadenken was best wel een knelpunt.
