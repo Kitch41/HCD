@@ -20,7 +20,12 @@ Deze website hoeft alleen maar voor haar te worden gemaakt. Dus in dit geval is 
 
 Het probleem waar petra vooral mee te maken heeft is dat ze zelf zoveel mogenlijk wilt doen en niet echt afhankelijk wilt zijn van andere mensen. Dit is nogal een probleem aangezien het matchen van kleren en kleuren niet gedaan kan worden door andere mensen. Iedereen ziet namelijk zijn/haar kleuren anders. Waar 1 iemand groen ziet ziet een ander turqouise.
 
-Om deze reden heb ik besloten een webapp te bouwen waarmee petra zelf met iemand haar eigen kleding invoerd en later zelfstandig haar eigen kleren kan matchen.
+Om deze reden heb ik besloten een webapp te bouwen waarmee petra zelf met iemand haar eigen kleding invoerd en later zelfstandig haar eigen kleren kan matchen. Zo kan ze het zelfstandig doen en is het toch een handige app voor haar.
+
+
+## De oplossing
+
+De webapp gaat doormiddel van een zoekfunctie kledingstukken matchen die je eerder hebt ingevoerd. Dit is zelfstandig en goed te gebruiken door Petra.
 
 
 ### Week 1
@@ -38,7 +43,7 @@ De app zal een kledingstuk dat je kiest matchen met andere kledingstukken die je
 
 #### Exclusive Design Principles
 
-In week 1 heb ik me vooral bezig gehouden met de principes <b>study situation</b>, <b>Ignore conventions</b> en <b>Prioritise identity</b>
+In week 1 heb ik me vooral bezig gehouden met de principes <b>Study situation</b>, <b>Ignore conventions</b> en <b>Prioritise identity</b>
 
 ##### Study Situation
 Voor Study Situations heb ik vragen gesteld over hoe ze nou het meeste op het web surft en wat ze zou gebruiken in het geval van mijn app. Hieruit kwam dat Petra graag haar telefoon gebruikt als ze kleren zou uitzoeken.
@@ -140,6 +145,20 @@ Uiteindelijk heb ik week 3 gebruikt om de zoekfunctie nog een klein beetje te fi
 Week 4 is de laatste week. Hierin heb ik een aantal dingen afgerond en vooral thuis gewerkt.
 Ik kon helaas niet aanwezig zijn bij het laatste feedbackmoment. Dus heb ik alle informatie die ik eerder heb ontvangen nog even goed doorgekeken en afgerond.
 
+#### Feedback Gesprek
+
+Tijdens mijn beoordeling had ik mijn laatste test uitgevoerd met eric. Hieruit kwam dat mijn ideeen wel goed te zien waren in mijn werk maar nog niet in mijn readme. Ik had nog niet genoeg uitgelegd aan wat ik heb gedaan met de Exclusive Design Principes. Dit heb ik nu goed uitgeschreven per week. Mijn gedachte gang en vooral wat ik uiteindelijk heb en wat ik nog zou verbeteren.
+
+<b>Positief</b>
+
+* Er is wel over nagedacht
+
+<b>Te Verbeteren</b>
+
+* Geen 4de test gedaan
+* Readme moet uitgebreider
+* Exclusive Design Principles moeten gedocumenteerd worden.
+
 #### Exclusive Design Principles
 
 In week 4 ga ik aangeven wat ik nog zou kunnen verbeteren als het aankomt op de Principes. En wat ik allemaal al heb.
@@ -164,15 +183,13 @@ Voor add nonsense heb ik een zoekbalk toegevoegd, deze zou ik nog iets verder ui
 
 Ook had ik nog wat extra na gaan denken om andere dingen toe te voegen die eventueel goed zijn voor Petra.
 
-### Laatste test
-
-Tijdens mijn beoordeling had ik mijn laatste test uitgevoerd met eric. Hieruit kwam dat mijn ideeen wel goed te zien waren in mijn werk maar nog niet in mijn readme. Ik had nog niet genoeg uitgelegd aan wat ik heb gedaan met de Exclusive Design Principes. Dit heb ik nu goed uitgeschreven per week. Mijn gedachte gang en vooral wat ik uiteindelijk heb en wat ik nog zou verbeteren.
 
 ### Extra tijd
 Wat ik gedaan zou hebben als ik extra tijd had om dit project verder uit te werken is:
 
-Een server opzetten om de data op te slaan. En vervolgens de app bouwen dat hij voor meerdere mensen werkt.
-Dit vervolgens testen en dan nog extra accesibility features toevoegen die kleine verschillen maken, zoals geluid en eventueel trillingen.
+* Een server opzetten om de data op te slaan. En vervolgens de app bouwen dat hij voor meerdere mensen werkt.
+* Dit vervolgens testen en dan nog extra accesibility features toevoegen die kleine verschillen maken, zoals geluid en eventueel trillingen.
+* Extra nadenken over nog meer Exclusive Design Principles toevoegen.
 
 
 ### Conclusie
